@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+  <html> 
+    <head>
+      <!–– meta tag ––>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title> VIVAMUS </title>
+
+      <!–– css link ––>
+      <link rel="stylesheet" type="text/css" href="assets\css\css.css">
+    </head>
+
+        <body>
+
+          <header>
+          <!–– vivamus logo ––>
+            <div id="logo">
+              <a href="#"><img src="assets\images\NXTLVL_WEBDEV_VIVA_LOGO.png"></a>
+            </div>
+            
+          <!–– Navigation Menu ––>
+              <nav id="top-nav"> 
+              <ul id="top-ul">
+                <li class="with-bar"><a href="#" >Bibendum</a></li>
+                <li class="with-bar"><a href="#" >Sollicitudin</a></li>
+                <li class="with-bar"><a href="#" >Metus</a></li>
+                <li><a href="#" >Egestas</a></li>
+                </ul>  
+              </nav>
+          <!–– Search Icon ––>
+                <div id="search-box">
+                   <input type="text">
+                    <button id="search-icon"><img src="assets\images\NXTLVL_WEBDEV_ICON_MAGNIFYING.png"></button>
+                </div>
+          </header>
+
+
+          <!–– Main Form––>
+          <main id="mainForm">
+          <!–– Title Bar ––> 
+            <div class="titleBar">
+              <h1 class="title">In euismod sapien eu maximus tempus
+              <p class="description">Vestibulum bibendum posuere dui, in pharetra est hendreit ac.<br>Integer posuere metus lacus</p> </h1> 
+              <h1 class="title">Vivamus interdum nunc ac sem fringilla 
+              <p class="description">duis risus urna, mattis eget justo non, gravida ultrices diam</p></h1>
+              <h1 class="title">In euismod sapien eu maximus tempus.
+              <p class="description">Vestibulum bibendum posuere dui, in pharetra est hendrerit ac.<br> Integer posuere metus lacus</p></h1>
+            </div>
+          <!–– Progress Bar 123 ––> 
+              <div id="progressBar">
+                <div class="container"><span id="step1"> 1 </span></div>
+                <div class="container"><span id="step2" class="step">2</span></div>
+                <div class="container"><span id="step3" class="step">3</span></div>
+              </div>
+          <!–– Form ––> 
+                <form id="regForm" action="connect.php" method="post">
+
+          <!–– Form First Page (One Tab on Each Step of the Form)––> 
+                  <div class="tab">
+                    <div class="panel1">
+                      <div class="panelHeading">
+                        <h2 class="panelTitle">About you</h2>
+                      </div>
+                        <div class="panel-forms1">
+                          <div class="first-name">
+                            <label for="fname">First name*</label><br>
+                            <input type="text" id="fname" oninput="this.className = ''" name="firstName" required>
+                          </div>
+                          <div class="last-name">
+                            <label for="lname">Last name*</label><br>
+                            <input type="text" id="lname" oninput="this.className = ''" name="lastName" required>
+                          </div><br>
+                            <label for="email">Email Address*</label><br>
+                            <input type="email" id="email" oninput="this.className = ''" name="email" required><br>
+                            <label for="phone">Mobile Number*</label><br>
+                            <input type="tel" id="phone" oninput="this.className = ''" name="number" required>
+                          </div>
+                    </div>
+                  </div>
+
+          <!–– Form Second Page (One Tab on Each Step of the Form)––> 
+                    <div class="tab"> 
+                      <div class="panel2">
+                        <div class="panelHeading">
+                          <h2 class="panelTitle">Your donation</h2>
+                        </div>
+                          <div class="panel-forms2">
+          <!–– Step 2 Paypal & Credit Card Button ––>
+                            <input type="checkbox" id="paypal" >
+                            <label class="paypal-btn" for="paypal">Paypal</label>
+                            <label class="credit-btn" for="paypal">Credit Card</label>
+          <!–– Step 2 Paypal Form ––>
+                              <div id="paypal-form">
+                                <h3><br>Vivamus Service Advisory</h3>
+                                <p id="advisory">March 25, 2022<br><br>
+                                  Paypal service in the Vivamus Website is<br> temporarily unavailable. Rest assured that<br> we're working hard to restore this service as<br> soon as possible.<br><br>Thank you.
+                                </p>
+                              </div>
+          <!–– Step 2 Credit Card Form ––>
+                              <div id="credit-form">
+                                <label class="donationLabel" for="donation">Donation Amount*</label><br>
+                                <input type="number" id="donation" oninput="this.className = ''" name="donated" required><br>
+                                <label class="donationLabel" for="cardHolder">Card Holder Name*</label><br>
+                                <input type="text" id="cardHolder" oninput="this.className = ''"  name="cardHolder" required><br>
+                                <label class="donationLabel" for="cardNum">Credit Card No.*</label><br>
+                                <input type="number" id="cardNum" oninput="this.className = ''" name="cardNumber" required><br>
+                                <label class="donationLabel" for="code">Card Security Code*</label><br>
+                                <input type="password" id="code" oninput="this.className = ''" name="code" required><br>
+                                <label class="donationLabel" for="exDate">Expiry Date*</label><br>
+                                <input type="text" id="exDate" oninput="this.className = ''" name="date" required><br>
+          <!–– Step 2 Visa & Mastercard Logo ––> 
+                                <div id="visa-logo"><img src="assets\images\Visa_Logo.png"></div>                     
+                                <div id="mastercard-logo"><img src="assets\images\Mastercard_Logo.png"></div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+
+          <!–– Form Third Page (One Tab on Each Step of the Form)––>               
+                      <div class="tab">
+                        <div class="panel3">
+                          <div class="panelHeading">
+                            <h2 class="panelTitle">Comment Field</h2>
+                          </div>
+          <!–– Step3 Message Textfield ––>              
+                          <label class="message-label" for="message">Your Message</label><br>
+                          <textarea id="message" name="message" required></textarea><br>
+          <!–– Step3 Checkbox Anonymous––>
+                          <input type="checkbox" id="anonymous" name="hidden" value="yes"></input>
+                          <label class="anonymous-label" for="anonymous">Keep me anonymous</label><br>
+                        </div>
+                      </div>
+          <!–– Buttons Next, Back & Submit ––> 
+                      <div >
+                        <div >
+                          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                        </div>
+                      </div>
+                </form>
+          </main>
+    
+      
+          <!–– Footer ––>
+          <footer id="footer">
+
+          <!–– Footer Circles––>
+            <div id="circles">
+              <ul>
+                <li><button class="circlebutton"></button></li>
+                <li><button class="circlebutton"></button></li>
+                <li><button class="circlebutton"></button></li>
+                <li><button class="circlebutton"></button></li>
+                <li><button class="circlebutton"></button></li>
+              </ul>
+            </div>
+          <!–– Footer Navigation Bar––>
+            <div id="foot-nav">
+              <ul>
+                <li><a href="#">Pellentesque</a></li>
+                <li><a href="#">Et interdum</a></li>
+                <li><a href="#">Neque</a></li>
+                <li><a href="#">Integer</a></li>
+                <li><a href="#">Ullamcorper</a></li>
+                <li><a href="#">Sagitis</a></li>
+              </ul>
+            </div>
+          <!–– Footer Copyright ––>
+              <p>Copyright Ⓒ 2015 Proin eget ipsum libero<br>All Rights Reserved.</p>
+          
+          </footer>
+
+          <!–– Javascript Link ––>
+             <script src="assets/js/myscript.js"></script>
+        
+      </body>
+</html>
+

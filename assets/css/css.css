@@ -1,0 +1,625 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/* HEADER -------------------- */
+header{
+    max-width: 100%;
+    height: 245px;
+    background-color: #2da8c9;
+    overflow: hidden;
+}
+/* VIVAMUS LOGO -------------------- */
+#logo{
+    display: inline-block;
+    position: absolute;
+    height: 245px;
+    margin-left:10.5%;
+}
+#logo img{
+    margin-top: 55px;
+    width: 170px;
+    -webkit-animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: white; -webkit-box-shadow: 0 0 3px white; }
+  50% { background-color: #2da8c9; -webkit-box-shadow: 0 0 40px #2da8c9; }
+  100% { background-color: #2da8c9; -webkit-box-shadow: 0 0 3px #2da8c9; }
+}
+/* NAVIGATION MENU-------------------- */
+#top-nav{
+    margin-left: 28%;
+    width: 45%;
+    overflow: hidden; 
+    display: inline-block;
+    height: 245px;
+    padding: 0px;
+}
+#top-ul{
+    padding: 0;
+    margin-top: 70px;
+}
+#top-ul li{
+      display: inline-block;
+}
+#top-ul a{
+    margin-right:20% ;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-family: Bell MT;
+    font-size: 2.5vw;  
+    padding: 0;
+}
+.with-bar{
+    padding: 0 10px 0 0;
+    margin: 5px;
+    border-right: 1px solid white;
+}
+
+/* SEARCH ICON -------------------- */
+#search-box {
+    width: 25vw;
+    height: 245px;
+    margin: 0;
+    float: right;
+}
+#search-box input[type=text] {
+    margin: 80px 0 0 0;
+    position: absolute;
+    width: 15.5vw;
+    background: transparent;
+    height: 35px;
+    font-size: 17px;
+    border: none;
+}
+#search-icon{
+    border: none;
+    margin: 84px 9.5vw 0 0;
+    background: transparent;
+    float: right;
+}
+#search-icon img{
+    width: 25px;
+}
+
+
+/* MAIN FORM -------------------- */
+#mainForm{
+    height: auto;
+    width: 100%;
+}
+
+/* TITLE BAR -------------------- */
+.titleBar {
+    width: 100%;
+    height: 200px; 
+    text-align: center; 
+}
+.title {
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+    color: #2da8c9;
+    font-size: clamp(10px, 5vw, 60px);
+    text-align: center;
+    font-family: YU Gothic UI;
+    display: none;
+}
+/* TITLE BAR MARK FINISH WHEN CLICKED NEXT -------------------- */
+.title.active {
+    display: block;
+    width: 100%;
+    position: absolute; 
+}
+.title.finish {
+    width: 100%;
+    display: none;
+}
+/* TITLE DESCRIPTION BAR -------------------- */
+.description{
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: lighter;
+    color: #2da8c9;
+    font-size: clamp(20px, 3vw, 38px);
+    text-align: center;
+    font-family: Bahnschrift Light;
+}
+/* PROGREE BAR STEPS 123 -------------------- */
+#progressBar{
+    text-align: center;
+    border-top: 3px solid #ebebeb;
+    width:900px;
+    margin: 35px 17% 0 ;
+}
+/* THE LINE ACROSS PROGRESS BAR -------------------- */
+#step1:before{
+    content: '';
+    position: absolute;
+    width:55%;
+    height: 10px;
+    margin-top: 20px;
+    background: #bfbfbf;
+    z-index: -1;
+}
+/* PROGESS BAR 123 -------------------- */
+.container{
+    display: inline-block;
+    width: 20vw;
+}
+#step1{
+    margin-right: 67%;
+    margin-top: 60px;
+    font-family: Arial;
+    font-size: 50px;
+    padding-top: 5px;
+    text-align: center;
+    border: 10px solid #bfbfbf;
+    width: 70px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #2da8c9;
+    color: white;
+    display: inline-block;
+}
+#step3{
+   margin-left: 67%;
+}
+.step {
+    font-family: Arial;
+    font-size: 50px;
+    padding-top: 5px;
+    text-align: center;
+    border: 10px solid #bfbfbf;
+    width: 70px;
+    height: 65px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: white;
+    color:  #2da8c9;
+}
+/* PROGESS BAR 123 FINISH WHEN CLICKED NEXT -------------------- */
+.step.active {
+    background-color: white;
+    color: #2da8c9;
+}
+/* PROGRESS BAR 123 MARK STEPS THAT ARE FINISH AND VALID */
+.step.finish {
+    background-color: #2da8c9;
+    color: white;
+}
+
+/* FORM -------------------- */
+#regForm {
+  margin: auto;
+  font-family: Calibri;
+  padding: 50px 0 30vh 0;
+  width: 70%;
+  min-width: 300px;
+}
+/* TEXTBOX EMPTY ERROR -------- */
+input.invalid {
+  background-color: #ffdddd;
+}
+/* HIDE ALL STEPS BY DEFAULT ----*/
+.tab {
+    display: none;
+}
+/* FORM 123 FORM STYLE ----*/
+.tab label{
+    color: #2da8c9; 
+    font-size: 25px;
+    margin-left: 10px;
+}
+input[type=text], input[type=email], input[type=tel], input[type=number], input[type=password], textarea {
+    width: 100%;
+    margin: 0;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0  0 1px 1px white;
+}
+/* FORM PAGE 1-------------------- */
+.panel1 {
+    align-content: center;
+    margin: auto 6%;
+    border-radius: 10px;
+    background: #ebebeb;
+}
+.panelTitle{
+    padding: 20px 0 0 20px;
+    width: auto;
+    margin: 0;
+    text-align: left;
+    font-size: 30px;
+    font-family: Bahnschrift Light;
+    color: #2da8c9; 
+}
+.panel-forms1{
+    padding:10px 5vw 40px;
+    height: 290px;
+}
+.first-name{
+    display:inline-block;
+    width: 48%;
+}
+.last-name{
+    margin: 0;
+    float: right;
+    display:inline-block;
+    width: 48%;
+}
+.panel-forms1 input[type=text]{
+    margin-bottom: 10px;
+}
+
+/* FORM PAGE 2-------------------- */
+input[type=checkbox]{
+    display: none;
+}
+.panel2 {
+    margin: auto 6%;
+    border-radius: 10px;
+    height: 690px;
+    background-color: #ebebeb;
+}
+.panel-forms2{
+    border-radius: 10px;
+    margin: 30px 105px;
+    background-color: white;
+}
+.panel-forms2 input{
+    background-color: #ebebeb;
+    width: 80%;
+    margin-left: 8%;
+}
+/* STEP 2 PAYPAL FORM -------------------- */
+#paypal-form{
+    height: 420px;
+    background-image: linear-gradient(to bottom, black , #2da8c9);
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+    color: #2da8c9;
+}
+
+/* STEP 2 CREDIT CARD FORM -------------------- */
+#credit-form{
+    margin-top: 10px;
+    height: 500px;
+}
+.ccBox, #donation, #code, #exDate, input{
+    width: 35%;
+    margin-bottom: 10px;
+    margin-left: 8%;
+}
+.donationLabel {
+    padding-left: 50px;
+    font-size: 25px;
+}
+
+/* STEP 2 VISA & MASTERCARD LOGO -------------------- */
+#visa-logo {
+    position: relative;
+    width: 10%;
+    margin-top: -40px;
+    margin-left: 55%;
+}
+#visa-logo img{
+    width: 90px;
+}
+#mastercard-logo{
+    position: relative;
+    width: 10%;
+    margin-top: -60px;
+    margin-left:70%;  
+}
+#mastercard-logo img{
+     width: 110px;
+}
+
+
+/* STEP 2 PAYPAL AND CREDIT CARD BUTTONS-------------------- */
+ .panel-forms2 .paypal-btn{  
+    font-size: 30px;
+    font-family: Calibri;
+    display: inline;
+    margin: 0px;
+    padding: 9px 18.1%;
+    border-radius:10px 10px 0 0;
+    z-index: 2;
+}
+.panel-forms2 .credit-btn{
+    font-size: 30px;
+    font-family: Calibri;
+    text-align: center;
+    display: inline;
+    margin: 0 0 0 -3px;
+    padding: 9px 14.4%;
+    border-radius:10px 10px 0 0;
+    z-index: 0;
+}
+
+
+/* STEP 2 PROCESS FOR PAYPAL & CREDIT CARD FORM -------------------- */
+#credit-form
+#paypal-form
+{
+  z-index: 2;
+  display: block;
+  height: auto;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+/* STEP 2 HIDE PAYPAL-------------------- */
+#paypal-form,
+ {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+/* STEP 2 PAYPAL UNCHECK BUTTONN DESIGN------------------- */
+#paypal:not(:checked) ~ .paypal-btn{
+    border-radius:10px 0 0 0;
+    padding: 3px 18.1%;
+    background: #2da8c9;
+    color: white;
+}
+#paypal:not(:checked) ~ .credit-btn{
+    background: white;
+    color: #2da8c9;
+}
+/* STEP 2 PAYPAL CHECKED BUTTON DESIGN ------------------- */
+#paypal:checked ~ .paypal-btn{
+    background: white;
+    color: #2da8c9;
+}
+#paypal:checked ~ .credit-btn{
+    padding: 3px 14.4%;
+    border-radius:0 10px 0 0;
+    background: #2da8c9;
+    color: white;
+}
+/* STEP 2 HIDE PAYPAL AND SHOW CREDIT FORM VISEVERSA-------------------- */
+#paypal:not(:checked) ~ #paypal-form {
+    display: none;
+}
+#paypal:checked ~ #credit-form {
+    display: none;
+}
+
+
+
+/* STEP 3 FORM -------------------- */
+#part3{
+    margin-top: -50px;
+}
+.panel3{
+    border-radius: 10px;
+    height: 390px;
+    background-color: #ebebeb;
+}
+#message {
+    min-height: 150px;
+    width: 80%;
+    margin-left: 10%;
+}
+.message-label, .anonymous-label {
+    display: block;
+    padding-top: 20px;
+    padding-left: 90px;
+    font-size: 25px;
+}
+/* STEP 3 ANONYMOUS CHECKBOX -------------------- */
+#anonymous + .anonymous-label {
+    display: block;
+    margin-top: 20px;
+    margin-left: 10%;
+    cursor: pointer;
+    padding: 0;
+    opacity: 1;
+}
+#anonymous {
+    display: none;
+}
+#anonymous + .anonymous-label:before {
+    content: "\2714";
+    background-color: white;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 15px;
+    margin-right: 10px;
+    padding: 0px 0 15px 5px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+/* STEP 3 ANONYMOUS CHECKBOX CHECK & UNCHECK-------------------- */
+#anonymous:checked + .anonymous-label:before {
+    background-color: #2da8c9;
+    color: white;
+}
+ #anonymous:checked:disabled + .anonymous-label:before {
+    background-color: white;
+}
+
+
+
+/* BUTTONS NEXT BACK AND SUBMIT-------------------- */
+#nextBtn {
+    border: none;
+    margin: 25px 55px 0 0;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    float: right;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px ;
+    background-color: #2da8c9;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2da8c9;
+}
+#prevBtn {
+    border: none;
+   margin: 25px 0 0 55px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    float: left;
+    width: 300px;
+    height: 70px;
+    border-radius: 10px ;
+    background-color: #2da8c9;
+}
+
+
+/* FOOTER -------------------- */
+#footer{
+    border: 1px solid white;
+    position: relative;
+    background-color: #bfbfbf;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+/* FOOTER NAV & CIRCLE LISTS -------------------- */
+#footer li{
+    display: inline-block;
+}
+/* FOOTER CIRCLES -------------------- */
+#circles ul {padding: 0;}
+#circles li:not(:first-child){
+      margin-left: 20px;
+}
+.circlebutton {
+    border: none;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+/* FOOTER NAVIGATION BAR -------------------- */
+#foot-nav ul{padding: 0;}
+#foot-nav ul li:not(:last-child){
+    border-right: 1px solid white;
+    margin-right: 15px;
+}
+#foot-nav a{
+    text-decoration: none;
+    font-family: calibri;
+    font-size: 23px;
+    color: white;
+    margin-right: 15px;
+}
+/* FOOTER COPYRIGHT -------------------- */
+p{
+    font-family: calibri;
+    font-size: 19px;
+    color: white;
+}
+
+
+
+/*MOBILE RESPONSIVE-------------------- */
+@media screen and (min-width: 981px){
+body{min-width: 1366px;}
+header{min-width: 1366px;}
+.title{min-width: 1366px;}
+}
+
+@media screen and (max-width: 980px) and (min-width: 721px) {
+header{max-height: 180px;}
+#search-box input[type=text] {border-radius: 7px;margin: 60px 0 0 0; height: 20px;}
+#search-icon {margin: 62px 9vw 0 0;}
+#search-icon img {width: 16px;}
+#top-ul {margin-top: 50px;}
+#top-ul a {font-size: 2.3vw;}
+#logo img {margin-top: 44px;width: 115px;}
+.title {font-size: clamp(10px, 4.5vw, 60px);}
+.description {font-size: clamp(20px, 2.8vw, 38px);}
+#progressBar{width: 65vw;}
+.titleBar {height: 145px;}
+#step3 {margin-left: 56%;}
+#regForm{padding-bottom: 30vh;}
+#paypal:not(:checked) ~ .paypal-btn {padding: 3px 12.5%;}
+.panel-forms2 .credit-btn {padding: 9px 7%;}
+#paypal:checked ~ .credit-btn {padding: 3px 5.4%;}
+.panel-forms2 .paypal-btn {padding: 9px 14.1%;}
+}
+
+@media screen and (max-width: 720px) and (min-width: 361px) {
+body{min-width: 720px;}
+header{height: 125px;}
+#logo img { margin-top: 32px;width: 85px;}
+#logo {margin-left: 12.5%;}
+#top-ul {padding: 0;margin-top: 35px;}
+#top-ul a {font-size: 2.1vw;}
+#search-box input[type=text] { margin: 42px 0 0 0;width: 15.5vw; height: 18px; font-size: 10px;}
+#search-icon {margin: 43px 9vw 0 0;}
+#search-icon img {width: 15px;}
+.title{min-width: 720px;}
+#progressBar{width: 475px;}
+#step3 {margin-left: 41%;}
+#footer {height: auto;}
+#foot-nav a {font-size: 2.5vw;}
+}
+
+@media screen and (max-width: 360px) {
+body{min-width: 360px;}
+header{max-height: 65px; min-width: 360px;}
+#logo{max-height: 65px;}
+#logo img {margin-top: 15px;width: 45px;}
+#top-nav{max-height: 65px;}
+#top-ul {margin-top: 17px;width: 306px;margin-left: 0px;font-size: 2px;}
+#top-ul a {font-size: 9px; }
+.with-bar {padding: 0 2px 0 0;margin: 2px;border-right: 1px solid white;}
+#search-box input[type=text] {border-radius: 2px;margin: 20px 0 0 0; height: 7px;}
+#search-icon {margin: 15px 7.5vw 0 0;}
+#search-icon img {width: 7px;}
+.titleBar {height: 54px; min-width: 360px;}
+.title {font-size: 16.5px; min-width: 360px; margin: 8px 0 0;}
+.description {font-size: 10.5px; min-width: 360px; margin: 2px;}
+#progressBar {width: 240px; margin: 10px 17% 0;border-top: 1px solid #ebebeb}
+#step1 {margin: 15px 45px 0 0;font-size: 15px;padding-top: 1px;border: 3px solid #bfbfbf;width: 21px;height: 19px;}
+.step{margin: 0;font-size: 15px;padding-top: 1px;border: 3px solid #bfbfbf;width: 21px;height: 19px;}
+#step3 {margin-left: 50%;}
+#step1:before {margin-top: 7px; height: 5px;}
+#regForm {padding: 20px 0 40vh 0;width: 100%;}
+.panel-forms2 {border-radius: 10px;margin: 30px 20px;}
+#paypal:not(:checked) ~ .paypal-btn {padding: 1px 3.6%;}
+.panel-forms2 .credit-btn {padding: 11px 3%;}
+.panel-forms2 .paypal-btn {padding: 10px 3.6%;}
+#paypal:checked ~ .credit-btn {padding: 1px 3%;}
+#advisory{font-size: 13px; color: white;}
+#mastercard-logo img {width: 70px;}
+#visa-logo img {width: 50px;}
+#mastercard-logo {margin-top: -38px;margin-left: 73%;}
+#nextBtn, #prevBtn{width: 250px;}
+#footer{height: auto;}
+.circlebutton {height: 20px;width: 20px;}
+#circles ul {margin: 5px;}
+#circles li:not(:first-child){margin-left: 5px;}
+#foot-nav{max-height: 10px; min-width: 360px;}
+#foot-nav ul{margin: 0; min-width: 360px;}
+#foot-nav ul li:not(:last-child){margin-right: 3px; margin-top: 1px; }
+#foot-nav a {font-size: 10px;margin-right: 3px;}
+p {font-size: 10px;}
+}
+
+
+
+
+
+
